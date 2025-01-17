@@ -52,42 +52,42 @@ void beep(uint pin, uint duration_ms) {
 
 
 void menu(){
-    printf("\ec\e[3J");
     char escolha = 'n';
     printf("\n");
-    printf("Deseja ligar o que?\n");
-    printf("[1] Led vermelho\n");
-    printf("[2] Led verde\n");
-    printf("[3] Led azul\n");
-    printf("[4] Os 3 leds\n");
-    printf("[5] Emitir sinal sonoro no buzzer A\n");
-    printf("[6] Emitir sinal sonoro no buzzer B\n");
-    printf("[7] Desligar Leds\n");
+    printf("Deseja fazer o que?\n");
+    printf("[1] [2] [3] [4] [5] [6] [7]\n");
     scanf("%c",&escolha);
     if (escolha == '1')
     {
+        printf("Led vermelho ligado");
         gpio_put(LED_GREEN_PIN, false);
         gpio_put(LED_BLUE_PIN, false);
         gpio_put(LED_RED_PIN, true);
     }else if(escolha == '2'){
+        printf("Led verde ligado");
         gpio_put(LED_BLUE_PIN, false);
         gpio_put(LED_RED_PIN, false);
         gpio_put(LED_GREEN_PIN, true);
     }
     else if(escolha == '3'){
+        printf("Led azul ligado");
         gpio_put(LED_GREEN_PIN, false);
         gpio_put(LED_RED_PIN, false);
         gpio_put(LED_BLUE_PIN, true);
     }else if (escolha == '4'){
+        printf("Os 3 leds ligado formando a cor branca");
         gpio_put(LED_BLUE_PIN, true);
         gpio_put(LED_GREEN_PIN, true);
         gpio_put(LED_RED_PIN, true);
     }else if(escolha == '5'){
+        printf("Buzzer A emitindo sinal");
         beep(BUZZER_PIN_A, 2000);
     }else if(escolha == '6'){
+        printf("Buzzer B emitindo sinal");
         beep(BUZZER_PIN_B,2000);
     }
     else if(escolha == '7'){
+        printf("Todos os leds desligados");
         gpio_put(LED_BLUE_PIN, false);
         gpio_put(LED_GREEN_PIN, false);
         gpio_put(LED_RED_PIN, false);
@@ -96,6 +96,7 @@ void menu(){
         printf("Por favor escolha uma das opções acima!!!");
         sleep_ms(2000);
     }
+    printf("\n");
     sleep_ms(200);// debouncing
 }
 int main()
