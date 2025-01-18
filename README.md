@@ -26,4 +26,4 @@ Cabo micro usb para usb
 
 GPIOS(11 = LED VERDE,12 = LED AZUL,13 = LED VERMELHO,21 = BUZZER A E 10 = BUZZER B)
 
-Link pra gravação dos testes:  
+Link pra gravação dos testes:  https://youtu.be/H1ZHiJr-nzc?si=sBUt22oJvmtD1QEj
