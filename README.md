@@ -1,6 +1,7 @@
 # Tarefa2A4-Leonardo_Bonifacio 
 
 #Prática feita exclusivamente por Leonardo Bonifácio 
+
 Neste exemplo o usuário deve apertar de 1 a 7 para ativar alguma função no kit de desenvolvimento BitDogLab.
 
 1 = LED VERMELHO
