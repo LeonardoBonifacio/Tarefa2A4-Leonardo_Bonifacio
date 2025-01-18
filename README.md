@@ -1,5 +1,5 @@
 # Tarefa2A4-Leonardo_Bonifacio
-Neste exemplo eu o usuário deve apertar de 1 a 7 para ativar alguma função no kit de desenvolvimento BitDogLab.
+Neste exemplo o usuário deve apertar de 1 a 7 para ativar alguma função no kit de desenvolvimento BitDogLab.
 
 1 = LED VERMELHO
 
